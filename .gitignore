@@ -1,0 +1,13 @@
+node_modules/
+out/
+qa/
+.dist/
+.remotion/
+.env
+.env.*
+*.mp4
+*.mov
+*.webm
+*.log
+.DS_Store
+publish-state*.json

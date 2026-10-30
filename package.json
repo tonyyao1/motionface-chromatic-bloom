@@ -1,0 +1,28 @@
+{
+  "name": "motionface-chromatic-bloom",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Procedural chromatic bloom sculpture rendered with Remotion and Three.js",
+  "scripts": {
+    "studio": "remotion studio src/index.ts",
+    "typecheck": "tsc --noEmit",
+    "render": "remotion render src/index.ts ChromaticBloom out/chromatic-bloom-master.mp4",
+    "still": "remotion still src/index.ts ChromaticBloom",
+    "compress": "node scripts/compress.mjs"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.539",
+    "@remotion/three": "4.0.539",
+    "@react-three/fiber": "9.4.0",
+    "remotion": "4.0.539",
+    "react": "19.2.0",
+    "react-dom": "19.2.0",
+    "three": "0.180.0"
+  },
+  "devDependencies": {
+    "@types/react": "19.2.14",
+    "@types/react-dom": "19.2.3",
+    "@types/three": "0.180.0",
+    "typescript": "5.9.3"
+  }
+}
